@@ -1,5 +1,5 @@
-# platform.tech-emporium
-Repositório de Documentação para o projeto Tech Emporium de Plataformas, APIs e Microsserviços
+# Tech Emporium
+Repositório de Documentação e Referências de microsserviços para o projeto Tech Emporium de Plataformas, APIs e Microsserviços
 
 ### Alunos:
 - [Lucca Hiratsuca Costa](https://github.com/LuccaHiratsuca)
