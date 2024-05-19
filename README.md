@@ -52,3 +52,7 @@ Link para repositório: [Order Resource](https://github.com/thomaschiari/platfor
 - Docker API
 
 Link para repositório: [Docker API](https://github.com/LuccaHiratsuca/platform.store.docker-api)
+
+- Tech Emporium DB
+
+Link para repositório: [Tech Emporium DB](https://github.com/thomaschiari/platform.tech-emporium.db)
