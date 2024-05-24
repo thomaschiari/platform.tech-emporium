@@ -63,21 +63,7 @@ Link para repositório: [Redis](https://github.com/LuccaHiratsuca/platform.tech-
 
 
 ```mermaid
-graph TD;
-    style Usuario fill:#f9f,stroke:#333,stroke-width:2px;
-    style Gateway fill:#bbf,stroke:#333,stroke-width:2px;
-    style AccountService fill:#bbf,stroke:#333,stroke-width:2px;
-    style AuthService fill:#bbf,stroke:#333,stroke-width:2px;
-    style ProductService fill:#bbf,stroke:#333,stroke-width:2px;
-    style OrderService fill:#bbf,stroke:#333,stroke-width:2px;
-    style AccountResource fill:#dfd,stroke:#333,stroke-width:2px;
-    style AuthResource fill:#dfd,stroke:#333,stroke-width:2px;
-    style ProductResource fill:#dfd,stroke:#333,stroke-width:2px;
-    style OrderResource fill:#dfd,stroke:#333,stroke-width:2px;
-    style Redis fill:#f66,stroke:#333,stroke-width:2px;
-    style DiscoveryService fill:#ff9,stroke:#333,stroke-width:2px;
-    style TechEmporiumDB fill:#ccf,stroke:#333,stroke-width:2px;
-    style CircuitBreaker fill:#cfc,stroke:#333,stroke-width:2px;
+graph LR;
 
     Usuario[Usuário] --> Gateway;
     Gateway --> AccountService[Account Service];
