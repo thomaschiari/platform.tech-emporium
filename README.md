@@ -56,3 +56,7 @@ Link para repositório: [Docker API](https://github.com/LuccaHiratsuca/platform.
 - Tech Emporium DB
 
 Link para repositório: [Tech Emporium DB](https://github.com/thomaschiari/platform.tech-emporium.db)
+
+- Redis
+
+Link para repositório: [Redis](https://github.com/LuccaHiratsuca/platform.tech-emporium.redis)
