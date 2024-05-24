@@ -62,35 +62,77 @@ Link para repositório: [Tech Emporium DB](https://github.com/thomaschiari/platf
 Link para repositório: [Redis](https://github.com/LuccaHiratsuca/platform.tech-emporium.redis)
 
 
+### Diagrama de funcionamento de serviços:
+
 ```mermaid
-graph LR;
+classDiagram
+    class Gateway {
+        +Redireciona requisições
+    }
+    class AuthService {
+        +Gerencia autenticação
+        +AuthResource
+    }
+    class AccountService {
+        +Gerencia contas de usuário
+        +AccountResource
+    }
+    class ProductService {
+        +Gerencia produtos
+        +ProductResource
+    }
+    class OrderService {
+        +Gerencia pedidos
+        +OrderResource
+    }
 
-    Usuario[Usuário] --> Gateway;
-    Gateway --> AccountService[Account Service];
-    Gateway --> AuthService[Auth Service];
-    Gateway --> ProductService[Product Service];
-    Gateway --> OrderService[Order Service];
-    
-    AccountService --> AccountResource[Account Resource];
-    AuthService --> AuthResource[Auth Resource];
-    ProductService --> ProductResource[Product Resource];
-    OrderService --> OrderResource[Order Resource];
-    
-    AuthService --> Redis;
-    ProductService --> Redis;
-    OrderService --> Redis;
+    Gateway --> AuthService : Redireciona autenticação
+    Gateway --> AccountService : Redireciona gerenciamento de contas
+    Gateway --> ProductService : Redireciona gerenciamento de produtos
+    Gateway --> OrderService : Redireciona gerenciamento de pedidos
 
-    DiscoveryService[Discovery Service] --> AccountService;
-    DiscoveryService --> AuthService;
-    DiscoveryService --> ProductService;
-    DiscoveryService --> OrderService;
-    
-    AccountService --> TechEmporiumDB;
-    AuthService --> TechEmporiumDB;
-    ProductService --> TechEmporiumDB;
-    OrderService --> TechEmporiumDB;
-    
-    CircuitBreaker[Circuit Breaker] --> AccountService;
-    CircuitBreaker --> AuthService;
-    CircuitBreaker --> ProductService;
-    CircuitBreaker --> OrderService;
+    AuthService ..> AuthResource : Utiliza
+    AccountService ..> AccountResource : Utiliza
+    ProductService ..> ProductResource : Utiliza
+    OrderService ..> OrderResource : Utiliza
+```
+
+
+### Diagrama de funcionamento de Infraestrutura:
+
+```mermaid
+classDiagram
+    class Redis {
+        +Cache de alta performance
+    }
+    class DiscoveryService {
+        +Serviço de descoberta
+    }
+    class TechEmporiumDB {
+        +Banco de dados central
+    }
+    class CircuitBreaker {
+        +Mecanismo de resiliência
+    }
+
+    DiscoveryService --|> AuthService
+    DiscoveryService --|> AccountService
+    DiscoveryService --|> ProductService
+    DiscoveryService --|> OrderService
+
+    Redis --|> AuthService
+    Redis --|> ProductService
+    Redis --|> OrderService
+
+    TechEmporiumDB --|> AuthService
+    TechEmporiumDB --|> AccountService
+    TechEmporiumDB --|> ProductService
+    TechEmporiumDB --|> OrderService
+
+    CircuitBreaker --|> AuthService
+    CircuitBreaker --|> AccountService
+    CircuitBreaker --|> ProductService
+    CircuitBreaker --|> OrderService
+```
+
+
