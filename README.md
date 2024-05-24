@@ -135,4 +135,5 @@ classDiagram
     CircuitBreaker --|> OrderService
 ```
 
-
+### Apresentação do Projeto:
+- [Apresentação](Tech%20Emporium.pdf)
