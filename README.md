@@ -136,4 +136,4 @@ classDiagram
 ```
 
 ### Apresentação do Projeto:
-- [Apresentação](Tech%20Emporium.pdf)
+- [Apresentação](https://www.canva.com/design/DAGGGQxQAOk/whNCVZho9MY3qcaYNA9QvQ/edit?utm_content=DAGGGQxQAOk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
