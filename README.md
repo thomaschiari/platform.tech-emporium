@@ -60,3 +60,51 @@ Link para repositório: [Tech Emporium DB](https://github.com/thomaschiari/platf
 - Redis
 
 Link para repositório: [Redis](https://github.com/LuccaHiratsuca/platform.tech-emporium.redis)
+
+
+```mermaid
+graph TD;
+    style Usuario fill:#f9f,stroke:#333,stroke-width:2px;
+    style Gateway fill:#bbf,stroke:#333,stroke-width:2px;
+    style AccountService fill:#bbf,stroke:#333,stroke-width:2px;
+    style AuthService fill:#bbf,stroke:#333,stroke-width:2px;
+    style ProductService fill:#bbf,stroke:#333,stroke-width:2px;
+    style OrderService fill:#bbf,stroke:#333,stroke-width:2px;
+    style AccountResource fill:#dfd,stroke:#333,stroke-width:2px;
+    style AuthResource fill:#dfd,stroke:#333,stroke-width:2px;
+    style ProductResource fill:#dfd,stroke:#333,stroke-width:2px;
+    style OrderResource fill:#dfd,stroke:#333,stroke-width:2px;
+    style Redis fill:#f66,stroke:#333,stroke-width:2px;
+    style DiscoveryService fill:#ff9,stroke:#333,stroke-width:2px;
+    style TechEmporiumDB fill:#ccf,stroke:#333,stroke-width:2px;
+    style CircuitBreaker fill:#cfc,stroke:#333,stroke-width:2px;
+
+    Usuario[Usuário] --> Gateway;
+    Gateway --> AccountService[Account Service];
+    Gateway --> AuthService[Auth Service];
+    Gateway --> ProductService[Product Service];
+    Gateway --> OrderService[Order Service];
+    
+    AccountService --> AccountResource[Account Resource];
+    AuthService --> AuthResource[Auth Resource];
+    ProductService --> ProductResource[Product Resource];
+    OrderService --> OrderResource[Order Resource];
+    
+    AuthService --> Redis;
+    ProductService --> Redis;
+    OrderService --> Redis;
+
+    DiscoveryService[Discovery Service] --> AccountService;
+    DiscoveryService --> AuthService;
+    DiscoveryService --> ProductService;
+    DiscoveryService --> OrderService;
+    
+    AccountService --> TechEmporiumDB;
+    AuthService --> TechEmporiumDB;
+    ProductService --> TechEmporiumDB;
+    OrderService --> TechEmporiumDB;
+    
+    CircuitBreaker[Circuit Breaker] --> AccountService;
+    CircuitBreaker --> AuthService;
+    CircuitBreaker --> ProductService;
+    CircuitBreaker --> OrderService;
