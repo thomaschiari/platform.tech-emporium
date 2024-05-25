@@ -1,7 +1,7 @@
 # Tech Emporium
 Repositório de Documentação e Referências de microsserviços para o projeto Tech Emporium de Plataformas, APIs e Microsserviços
 
-### Alunos:
+### Autores:
 - [Lucca Hiratsuca Costa](https://github.com/LuccaHiratsuca)
 - [Thomas Chiari Ciocchetti de Souza](https://github.com/thomaschiari)
 
