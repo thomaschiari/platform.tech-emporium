@@ -61,6 +61,14 @@ Link para repositório: [Tech Emporium DB](https://github.com/thomaschiari/platf
 
 Link para repositório: [Redis](https://github.com/LuccaHiratsuca/platform.tech-emporium.redis)
 
+- Paypal
+Link para repositório: [Paypal](https://github.com/LuccaHiratsuca/platform.tech-emporium.paypal)
+
+- Paypal Resource
+Link para repositório: [Paypal Resource](https://github.com/LuccaHiratsuca/platform.tech-emporium.paypal-resource)
+
+- Frontend
+Link para repositório: [Frontend](https://github.com/LuccaHiratsuca/platform.tech-emporium.frontend)
 
 ### Diagrama de funcionamento de serviços:
 
