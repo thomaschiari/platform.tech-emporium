@@ -9,66 +9,26 @@ Repositório de Documentação e Referências de microsserviços para o projeto 
 Tech-Emporium simula uma loja online de produtos de tecnologia, em que usuários podem se autenticar, e usuários autenticados podem cadastrar produtos, alterar produtos, criar orders, alterar orders e deletar orders. 
 
 ### Serviços: 
-- Account
 
-Link para repositório: [Account](https://github.com/LuccaHiratsuca/platform.store.account)
+| Service            | Repository Link                                                                                   |
+|--------------------|---------------------------------------------------------------------------------------------------|
+| Account            | [Account](https://github.com/LuccaHiratsuca/platform.store.account)                               |
+| Account Resource   | [Account Resource](https://github.com/LuccaHiratsuca/platform.store.account-resource)             |
+| Auth               | [Auth](https://github.com/LuccaHiratsuca/platform.store.auth)                                     |
+| Auth Resource      | [Auth Resource](https://github.com/LuccaHiratsuca/platform.store.auth-resource)                   |
+| Gateway            | [Gateway](https://github.com/LuccaHiratsuca/platform.store.gateway)                               |
+| Discovery          | [Discovery](https://github.com/LuccaHiratsuca/platform.store.discovery)                           |
+| Product            | [Product](https://github.com/thomaschiari/platform.tech-emporium.products)                        |
+| Product Resource   | [Product Resource](https://github.com/thomaschiari/platform.tech-emporium.product-resource)       |
+| Order              | [Order](https://github.com/thomaschiari/platform.tech-emporium.orders)                            |
+| Order Resource     | [Order Resource](https://github.com/thomaschiari/platform.tech-emporium.order-resource)           |
+| Docker API         | [Docker API](https://github.com/LuccaHiratsuca/platform.store.docker-api)                         |
+| Tech Emporium DB   | [Tech Emporium DB](https://github.com/thomaschiari/platform.tech-emporium.db)                     |
+| Redis              | [Redis](https://github.com/LuccaHiratsuca/platform.tech-emporium.redis)                           |
+| Paypal             | [Paypal](https://github.com/LuccaHiratsuca/platform.tech-emporium.paypal)                         |
+| Paypal Resource    | [Paypal Resource](https://github.com/LuccaHiratsuca/platform.tech-emporium.paypal-resource)       |
+| Frontend           | [Frontend](https://github.com/LuccaHiratsuca/platform.tech-emporium.frontend)                     |
 
-- Account Resource
-
-Link para repositório: [Account Resource](https://github.com/LuccaHiratsuca/platform.store.account-resource)
-
-- Auth
-
-Link para repositório: [Auth](https://github.com/LuccaHiratsuca/platform.store.auth)
-
-- Auth Resource
-
-Link para repositório: [Auth Resource](https://github.com/LuccaHiratsuca/platform.store.auth-resource)
-
-- Gateway
-
-Link para repositório: [Gateway](https://github.com/LuccaHiratsuca/platform.store.gateway)
-
-- Discovery
-
-Link para repositório: [Discovery](https://github.com/LuccaHiratsuca/platform.store.discovery)
-
-- Product
-
-Link para repositório: [Product](https://github.com/thomaschiari/platform.tech-emporium.products)
-
-- Product Resource
-
-Link para repositório: [Product Resource](https://github.com/thomaschiari/platform.tech-emporium.product-resource)
-
-- Order
-
-Link para repositório: [Order](https://github.com/thomaschiari/platform.tech-emporium.orders)
-
-- Order Resource
-
-Link para repositório: [Order Resource](https://github.com/thomaschiari/platform.tech-emporium.order-resource)
-
-- Docker API
-
-Link para repositório: [Docker API](https://github.com/LuccaHiratsuca/platform.store.docker-api)
-
-- Tech Emporium DB
-
-Link para repositório: [Tech Emporium DB](https://github.com/thomaschiari/platform.tech-emporium.db)
-
-- Redis
-
-Link para repositório: [Redis](https://github.com/LuccaHiratsuca/platform.tech-emporium.redis)
-
-- Paypal
-Link para repositório: [Paypal](https://github.com/LuccaHiratsuca/platform.tech-emporium.paypal)
-
-- Paypal Resource
-Link para repositório: [Paypal Resource](https://github.com/LuccaHiratsuca/platform.tech-emporium.paypal-resource)
-
-- Frontend
-Link para repositório: [Frontend](https://github.com/LuccaHiratsuca/platform.tech-emporium.frontend)
 
 ### Diagrama de funcionamento de serviços:
 
