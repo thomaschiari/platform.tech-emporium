@@ -1,0 +1,18 @@
+site_name: Tech Emporium Documentation
+
+nav:
+    - Home: index.md
+    - Structure: diagrams.md
+    - Tools: tools.md
+    - Infra: infra.md
+
+theme:
+    name: material
+
+markdown_extensions:
+    - codehilite
+    - toc:
+        permalink: true
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.0/mermaid.min.js
