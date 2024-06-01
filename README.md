@@ -27,7 +27,6 @@ Tech-Emporium simula uma loja online de produtos de tecnologia, em que usuários
 | Redis              | [Redis](https://github.com/LuccaHiratsuca/platform.tech-emporium.redis)                           |
 | Paypal             | [Paypal](https://github.com/LuccaHiratsuca/platform.tech-emporium.paypal)                         |
 | Paypal Resource    | [Paypal Resource](https://github.com/LuccaHiratsuca/platform.tech-emporium.paypal-resource)       |
-| Frontend           | [Frontend](https://github.com/LuccaHiratsuca/platform.tech-emporium.frontend)                     |
 
 
 ### Diagrama de funcionamento de serviços:
