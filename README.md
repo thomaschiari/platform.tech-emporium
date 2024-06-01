@@ -8,6 +8,9 @@ Repositório de Documentação e Referências de microsserviços para o projeto 
 ### Descrição Geral:
 Tech-Emporium simula uma loja online de produtos de tecnologia, em que usuários podem se autenticar, e usuários autenticados podem cadastrar produtos, alterar produtos, criar orders, alterar orders e deletar orders. 
 
+### Documentação:
+Acesse nossa documentação [aqui](https://thomaschiari.github.io/platform.tech-emporium/)
+
 ### Serviços: 
 
 | Service            | Repository Link                                                                                   |
